@@ -1,5 +1,15 @@
-import Home from './home'
+import Employees from "./employees";
+import Profile from "./profile";
+import Dashboard from "./dashboard";
+import Settings from "./settings";
+import Clients from "./clients"
 
-export {
-    Home
-}
+
+
+
+
+
+
+
+
+export { Employees, Profile, Dashboard, Settings, Clients };
