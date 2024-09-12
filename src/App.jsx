@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Header, Sidebar } from "components";
-import { Clients, Dashboard, Employees, Profile, Settings } from "pages";
+import {Basic, Clients, Dashboard, Employees, Profile, Settings } from "pages";
 import "assets/styles/index.scss";
 
 function App() {
+  const [parametr, setParametr] = useState({open: false, data:{}})
   return (
     <div>
       <div className="flex">
@@ -22,6 +24,9 @@ function App() {
                 <Route path="/settings/" element={<Settings />} />
               </Routes>
             </div>
+            <Basic {...{parametr, setParametr} } 
+            className={parametr.open ? "main-section__wrapper" : "open"}
+            />
           </div>
         </div>
       </div>

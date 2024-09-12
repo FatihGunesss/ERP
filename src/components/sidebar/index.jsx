@@ -67,7 +67,7 @@ const Sidebar = () => {
 
           <Link>
             <div className="">
-              <p className=" w-[140px] font-bold text-[#6F6F6F]">
+              <p className="w-[140px] font-bold text-[#6F6F6F]">
                 Достонхон Озодходжаев
               </p>
             </div>

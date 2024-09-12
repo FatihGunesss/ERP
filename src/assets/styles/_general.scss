@@ -1,4 +1,4 @@
-@tailwind base;
+// @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -130,27 +130,27 @@ ul {
   }
 }
 
-.btnPanel {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
+// .btnPanel {
+//   position: absolute;
+//   bottom: 20px;
+//   right: 20px;
+//   display: flex;
 
-  .editBtn {
-    cursor: pointer;
-    border-radius: 12px;
-    padding: 6px 7px 8px 9px;
-    background-color: #9ea3b5;
-    margin-right: 10px;
-  }
+//   .editBtn {
+//     cursor: pointer;
+//     border-radius: 12px;
+//     padding: 6px 7px 8px 9px;
+//     background-color: #9ea3b5;
+//     margin-right: 10px;
+//   }
 
-  .deleteBtn {
-    cursor: pointer;
-    border-radius: 12px;
-    padding: 7px 10px 9px 9px;
-    background-color: #ffa39e;
-  }
-}
+//   .deleteBtn {
+//     cursor: pointer;
+//     border-radius: 12px;
+//     padding: 7px 10px 9px 9px;
+//     background-color: #ffa39e;
+//   }
+// }
 
 .no-scrollbar::-webkit-scrollbar{
   display: none;

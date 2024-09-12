@@ -1,9 +1,8 @@
-import { useLocation } from 'react-router-dom';
-import "./style.scss"
+import { useLocation } from "react-router-dom";
+import "./style.scss";
 
 const Header = () => {
   let location = useLocation();
-  console.log(location.pathname);
   const itemMap = [
     {
       id: 1,
@@ -25,17 +24,35 @@ const Header = () => {
       title: "Settings",
       path: "/settings",
     },
+    // {
+    //   id: 5,
+    //   title: "Basic",
+    //   path: "/basic",
+    // },
   ];
   return (
     <div className="">
-      <div className="">
-        {itemMap.map((item,index) => (
-          item.path === location.pathname && <h1 className="text-[36px] font-bold mt-[48px] ml-[40px] mb-[25px]" key={index}>{item.title}</h1>
-        ))}
-         <span className="header-line"></span>
+      <div className="flex">
+        <div className="">
+          {itemMap.map(
+            (item, index) =>
+              item.path === location.pathname && (
+                <h1
+                  className="text-[36px] font-bold pt-[48px] pl-[40px] pb-[25px]"
+                  key={index}
+                >
+                  {item.title}
+                </h1>
+              )
+          )}
+        </div>
+        {/* <div className="">
+          <h2 className="text-[36px] font-bold pt-[48px] pl-[40px] pb-[25px]">Store Riviera</h2>
+        </div> */}
       </div>
+      <span className="header-line"></span>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

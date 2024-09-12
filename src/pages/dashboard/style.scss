@@ -1,0 +1,67 @@
+.dashboard-search{
+    position: relative;
+
+    input{
+        width: 64vw;
+        border: none;
+        border-radius: 16px;
+        background-color: #F9F9F9;
+        padding: 20px 0 20px 40px;
+        cursor: pointer;
+
+    }
+
+    input::placeholder{
+        font-size: 16px;
+        color: #BDBDBD;
+        font-weight: 600;
+    } 
+}
+
+
+
+.dashboard-btn{
+    background-color: #1F78FF;
+    color: #fff;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 19px 16px 19px 35px;
+    cursor: pointer;
+}
+
+
+.dashboard-line{
+    display: inline-block;
+    border: 2px solid #EAEAEA;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.dashboard-market__info{
+    font-weight: 600;
+    color: #BDBDBD;
+}
+
+.dashboard-market__about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 95px 0 20px;
+    background-color: #FBFBFB;
+    border-radius: 16px;
+    margin-top: 12px;
+}
+
+.dashboard-close__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EB5757;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
